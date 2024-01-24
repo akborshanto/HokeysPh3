@@ -20,7 +20,11 @@
             extend: {
               colors: {
                 // clifford: '#da373d',
-primary:"#FF4240"
+primary:"#FF4240",
+grayText:'#424247',
+blackText:'#131318',
+whiteText:'#fff',
+fs:'24px',
 
               }
             }
@@ -39,7 +43,6 @@ body{
   padding: 0;
 }
 
-
 </style>
 <body >
     <!-- ======================================
@@ -54,32 +57,32 @@ body{
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary rounded-box w-52">
           <li><a>Home 1</a></li>
           <li>
             <a>About</a>
             <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
+        <a href="item1">item1</a>
             </ul>
           </li>
  
 
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl ">Hockey<span class="text-[]">’ </span> s</a>
+      <a class=" text-xl text-blackText text-xl lg:text-3xl font-extrabold">Hockey<span class="text-primary text-2xl">’</span> s</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
-        <li><a>Home</a></li>
+        <li><a class="text-primary">Home</a></li>
         <li>
-          <details>
-            <summary>About</summary>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
+  <a href="">About</a>
+            <!-- <ul class="p-2   z-20 bg-primary text-whiteText">
+              <li><a>menu 1</a></li>
+              <li><a>menu 2</a></li>
+              <li><a>menu 3</a></li>
         
-            </ul>
-          </details>
+            </ul> -->
+     
         </li>
         <li><a>Pages</a></li>
         <li><a>Blog</a></li>
@@ -87,17 +90,19 @@ body{
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn">Get Ticket</a>
+
+      <i class="fa-solid fa-magnifying-glass mr-7 text-xl lg:hidden"></i>
+      <a class="btn bg-primary border-none outline-none text-whiteText">Get Ticket</a>
     </div>
   </div>
     <!-- ======================================
                  BANNER_SECTION
     =====================================================-->
 
-    <div class="carousel w-full   mt-12 lg:h-[550px] ">
+    <div class="carousel w-full mt-8   lg:mt-16 lg:h-[550px] ">
 <!-- meet-section -->
 
-      <div id="slide1" class="carousel-item   relative w-335px] h-[200px] w-full">
+      <div id="slide1" class="carousel-item   relative w-335px] h-[200px] w-full ">
         <img src="./img/Rectangle 1.png" class=" lg:h-[550px]  w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide4" class="btn btn-circle">❮</a> 
@@ -114,18 +119,22 @@ body{
 
         
       </div> 
-      <div id="slide2" class="carousel-item relative w-335px] h-[200px] w-full">
+      <div id="slide2" class="carousel-item   relative w-335px] h-[200px] w-full  ">
         <img src="./img/banner2.jpg" class=" lg:h-[550px]  w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle">❮</a> 
-          <a href="#slide3" class="btn btn-circle">❯</a>
-          <!-- meet-section -->
-          <div class="meet-section bg-[#131313] p-8 lg:w-[502px] lg:h[100px] rounded absolute lg:top-[224px] lg:right-[20px]">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+<!-- meet-section -->
+          <div class="meet-section bg-[#131313] p-4 lg:p-8 lg:w-[502px] lg:h[100px] rounded-lg absolute top-[136px] lg:top-[224px] lg:right-[20px]">
 
-            <h1 class=" text-[24px] font-bold mb-4 text-[#fff]">eet all the heroes from the field</h1>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <h1 class="text-[18px] mb-2 lg:text-[24px] font-bold lg:mb-4 text-[#fff]">eet all the heroes from the field</h1>
+            <p class="text-sm lg:text-xs">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
+            
+
         </div>
+
+        
       </div> 
       <div id="slide3" class="carousel-item relative w-335px] h-[200px] w-full">
         <img src="./img/banner3.jpg" class=" lg:h-[550px] w-full" />
@@ -163,17 +172,13 @@ body{
 
 
 </header>
-
     <!-- ======================================
                 MAIN_SECTION
     =====================================================-->
 <main class="container mx-auto ">
-<!--  -->
-
     <!-- ======================================
               CLUB_SECTION
     =====================================================-->
-
 <section class="club-section ">
 <!-- sHARED-TITLE -->
 <div class="shared-title text-center mt-4  p-4 lg:mt-12">
@@ -183,7 +188,7 @@ body{
 <!-- progress-item -->
 <div class="progress-container grid grid-cols-1 gap-4 lg:grid-cols-4 gap-8  mt-16">
 <div class="progress-item lg:w-[220px] text-center">
-  <div class="radial-progress lg:w-[120px] lg:h-[120px]" style="--value:70;" role="progressbar">70%</div>
+  <div class="radial-progress lg:w-[120px] lg:h-[120px] rotate-[144deg]" style="--value:80;" role="progressbar"><h1 class="rotate-[203deg]">80%</h1></div>
 <div class="progress-text w-[250px] mx-auto ">
   <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4">Prayer Facility</h1>
 <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
@@ -197,7 +202,7 @@ body{
 </div>
 </div>
 <div class="progress-item lg:w-[220px] text-center">
-  <div class="radial-progress lg:w-[120px] lg:h-[120px]" style="--value:70;" role="progressbar">70%</div>
+  <div class="radial-progress border-black bg-transparent lg:w-[120px] lg:h-[120px]" style="--value:70;" role="progressbar">70%</div>
 <div class="progress-text w-[250px] mx-auto ">
   <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4">Prayer Facility</h1>
 <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
@@ -752,7 +757,6 @@ body{
 
 
 </section>
-
     <!-- ======================================
               TOUCH_SECTION
     =====================================================-->
@@ -762,19 +766,19 @@ body{
     <h1 class=" text-xl font-bold lg:text-3xl text-[#131313]">Professional Hockeys Club</h1>
     <p class="py-4  w-[335px] lg:text-xl lg:w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
   </div>
-  <div class="touch-container flex  justify-between md:justify-between  gap-4">
+  <div class="touch-container flex flex-col lg:justify-between justify-between lg:flex-row   gap-4">
     <div class="contact-section border hover:border p-8">
-<div class="contact-item1 w-[287px] h-[187px] lg:w-[376px] lg:h-[210px]  p-8 mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
+<div class="contact-item1 w-[287px] h-[187px] lg:h-[210px]  p-8 mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
 <img src="./img/Group 1171275317.png" alt="PHone" class="w-[46px] h-[48px]">
 <p class="mt-8 mb-4">Phone Number : </p>
 <p>(+62) 123-321-543</p>
 </div>
-<div class="contact-item1  w-[287px] h-[187px] lg:w-[376px] lg:w-[376px] lg:h-[210px]  p-8  mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
+<div class="contact-item1  w-[287px] h-[187px]lg:w-[376px] lg:h-[210px]  p-8  mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
 <img src="./img/Group 1171275317.png" alt="PHone" class="w-[46px] h-[48px]">
 <p class="mt-8 mb-4">Phone Number : </p>
 <p>(+62) 123-321-543</p>
 </div>
-<div class="contact-item1  w-[287px] h-[187px] lg:w-[376px]  lg:w-[376px] lg:h-[210px]  p-8 mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
+<div class="contact-item1  w-[287px] h-[187px]  lg:w-[376px] lg:h-[210px]  p-8 mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
 <img src="./img/Group 1171275317.png" alt="PHone" class="w-[46px] h-[48px]">
 <p class="mt-8 mb-4">Phone Number : </p>
 <p>(+62) 123-321-543</p>
@@ -784,28 +788,28 @@ body{
     <div class="form-section">
     <form action="">
 <!-- emacil and name -->
-<div class="form-item1 lg:w-[672px ] flex flex-col lg:justify-between">
+<div class="form-item1  w-[335px] lg:w-[672px ] flex flex-col justify-between lg:justify-between lg:flex-row">
   <div class="name">
     <h2 class="mb-3">Your Name</h2>
-    <input type="text" placeholder="your name..." class=" lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
+    <input type="text" placeholder="your name..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
   <div class="email">
     <h1 class="mb-3">Your Email.</h1>
-    <input type="email" placeholder="your email..." class=" lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
+    <input type="email" placeholder="your email..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
 </div>
-<div class="form-item1 lg:w-[672px ] flex flex-col lg:justify-between">
+<div class="form-item1 w-[335px] lg:w-[672px ] flex flex-col justify-between lg:justify-between lg:flex-row">
   <div class="name">
     <h2 class="mb-3">Subject</h2>
-    <input type="email" placeholder="your email..." class="  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
+    <input type="email" placeholder="your email..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
   <div class="email mt-4">
     <h1 class="mb-3">Phone Number.</h1>
-    <input type="email" placeholder="your email..." class=" lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
+    <input type="email" placeholder="your email..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
 </div>
 <h2 class="mb-3">Message</h2>
-<textarea name="" id="" cols="30" rows="10" class="lg:w-[672px] border-none outline-none p-3 rounded-md" placeholder="textarea....." style="background: rgba(19, 19, 24, 0.03);"></textarea><br>
+<textarea name="" id="" cols="30" rows="10" class=" w-335px lg:w-[672px] border-none outline-none p-3 rounded-md" placeholder="textarea....." style="background: rgba(19, 19, 24, 0.03);"></textarea><br>
 <button class="btn w-full mt-4 bg-primary border-none text-white">Send Message</button>
     </form>
     
@@ -836,9 +840,6 @@ body{
     
 
 </section>
-
-
-
 
 </main>
     <!-- ======================================
