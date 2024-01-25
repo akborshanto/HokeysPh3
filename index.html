@@ -24,6 +24,7 @@ primary:"#FF4240",
 grayText:'#424247',
 blackText:'#131318',
 whiteText:'#fff',
+shadowText:'#1313184d',
 fs:'24px',
 
               }
@@ -48,7 +49,7 @@ body{
     <!-- ======================================
                  HEADER_SECTION
     =====================================================-->
-<header class="container mx-auto ">
+<header class="container mx-auto  px-3">
 <!-- navbar -->
 
   <div class="navbar ">
@@ -188,30 +189,34 @@ body{
 <!-- progress-item -->
 <div class="progress-container grid grid-cols-1 gap-4 lg:grid-cols-4 gap-8  mt-16">
 <div class="progress-item lg:w-[220px] text-center">
-  <div class="radial-progress lg:w-[120px] lg:h-[120px] rotate-[144deg]" style="--value:80;" role="progressbar"><h1 class="rotate-[203deg]">80%</h1></div>
+
+  <!-- <div  class="radial-progress lg:w-[120px] lg:h-[120px] rotate-[144deg]" style="--value:80;" role="progressbar"></div> -->
+
+  <div class="radial-progress rotate-[144deg] --size:7rem; --thickness: 2px; text-primary " style="--value:80; --size:6rem; " role="progressbar"><h1 class=" text-black font-bold rotate-[219deg]">80%</h1></div>
+
 <div class="progress-text w-[250px] mx-auto ">
-  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4">Prayer Facility</h1>
+  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4 text-blackText font-bold">Prayer Facility</h1>
 <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
 </div>
 </div>
 <div class="progress-item lg:w-[220px] text-center">
-  <div class="radial-progress lg:w-[120px] lg:h-[120px]" style="--value:70;" role="progressbar">70%</div>
+  <div class="radial-progress rotate-[144deg] --size:7rem; --thickness: 2px; text-[#49D293] " style="--value:95; --size:6rem; " role="progressbar"><h1 class=" text-black font-bold rotate-[219deg]">95%</h1></div>
 <div class="progress-text w-[250px] mx-auto ">
-  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4">Prayer Facility</h1>
+  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4 text-blackText font-bold">Prayer Facility</h1>
 <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
 </div>
 </div>
 <div class="progress-item lg:w-[220px] text-center">
-  <div class="radial-progress border-black bg-transparent lg:w-[120px] lg:h-[120px]" style="--value:70;" role="progressbar">70%</div>
+  <div class="radial-progress rotate-[144deg] --size:7rem; --thickness: 2px; text-[#FFB546] " style="--value:90; --size:6rem; " role="progressbar"><h1 class=" text-black font-bold rotate-[219deg]">90%</h1></div>
 <div class="progress-text w-[250px] mx-auto ">
-  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4">Prayer Facility</h1>
+  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4 text-blackText font-bold">Prayer Facility</h1>
 <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
 </div>
 </div>
 <div class="progress-item lg:w-[220px] text-center">
-  <div class="radial-progress lg:w-[120px] lg:h-[120px]" style="--value:70;" role="progressbar">70%</div>
+  <div class="radial-progress rotate-[144deg] --size:7rem; --thickness: 2px; text-[#4C8DF1] " style="--value:80; --size:6rem; " role="progressbar"><h1 class=" text-black font-bold rotate-[219deg]">80%</h1></div>>
 <div class="progress-text w-[250px] mx-auto ">
-  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4">Prayer Facility</h1>
+  <h1 class="lg:text-xl text-bold text[#131318] mt-4 pb-4 text-blackText font-bold">Prayer Facility</h1>
 <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
 </div>
 </div>
@@ -227,7 +232,7 @@ body{
     <!-- ======================================
               PROGRUM_SECTION
     =====================================================-->
-<section class="program-section">
+<section class="program-section ">
 <!-- sHARED-TITLE -->
 <div class="shared-title text-center mt-4  p-4 lg:mt-12">
   <h1 class=" text-xl font-bold lg:text-3xl text-[#131313]">Professional Hockeys Club</h1>
@@ -235,19 +240,34 @@ body{
 </div>
 
 <!-- program-card -->
-<div class="card-container p-4  grid grid-cols-1 lg:grid-cols-2  gap-4 lg:gap-20  ">
-  <div class="card w-[360px] lg:w-[556px]  mx-auto  image-full lg:ml-8">
-    <figure><img src="./img/3.png" alt="HOCKEY" class="" /></figure>
-    <div class="card-body lg:mt-16 ">
-      <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
-      <p class=" lg:w-[445px] my-2 lg:my-4 text-sm text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-      <div class="card-actions justify-start">
-        <button class="btn bg-[#ff4240] text-white outline-none border-none px-14">Buy Now</button>
-      </div>
+<div class="card-container p-4 px-[27px] flex flex-col gap-8 justify-between lg:justify-between lg:flex-row  ">
+
+ <div class="card1 w-[360px] lg:w-[570px] lg:h-[338px] flex justify-start   
+items-center p-8 bg-[url('/img/3.png')] bg-no-repeat bg-cover rounded-md " >
+  <div class="body lg:mt-16 ">
+    <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
+    <p class=" lg:w-[445px] my-2 lg:my-4 text-sm text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+    <div class="card-actions justify-start">
+      <button class="btn bg-[#ff4240] text-white outline-none border-none px-14">Buy Now</button>
     </div>
   </div>
-  <div class="card w-[360px] lg:w-[556px]  mx-auto  image-full ">
+  
+</div>
+<div class="card1 w-[360px] lg:w-[573px] lg:h-[338px] flex justify-start 
+items-center p-8 bg-[url('/img/3.png')] bg-no-repeat bg-cover rounded-md" >
+  <div class="body lg:mt-16 ">
+    <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
+    <p class=" lg:w-[445px] my-2 lg:my-4 text-sm text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+    <div class="card-actions justify-start">
+      <button class="btn bg-[#ff4240] text-white outline-none border-none px-14">Buy Now</button>
+    </div>
+  </div>
+  
+</div> 
+
+  <!-- <div class="card w-[330px] lg:w-[571px] lg:h-[338px] mx-auto  image-full ">
     <figure><img src="./img/3.png" alt="HOCKEY" class="lg:w-full" /></figure>
     <div class="card-body lg:mt-16 ">
       <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
@@ -258,8 +278,8 @@ body{
       </div>
     </div>
   </div>
-  <div class="card  w-[360px] mx-auto lg:w-[100%]    image-full  col-span-1 lg:col-span-2  flex">
-    <figure><img src="./img/4.png" alt="HOCKEY" class="" /></figure>
+  <div class="card w-[330px] lg:w-[571px] lg:h-[338px] mx-auto  image-full ">
+    <figure><img src="./img/3.png" alt="HOCKEY" class="lg:w-full" /></figure>
     <div class="card-body lg:mt-16 ">
       <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
       <p class=" lg:w-[445px] my-2 lg:my-4 text-sm text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
@@ -269,28 +289,71 @@ body{
       </div>
     </div>
   </div>
+  <div class="card  w-[330px] mx-auto lg:w-[100%]    image-full  col-span-1 lg:col-span-2  flex">
+    <figure><img src="./img/4.png" alt="HOCKEY" class="" /></figure>
+    <div class="card-body lg:mt-16 ">
+      <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
+      <p class=" lg:w-[445px] my-2 lg:my-4 text-sm text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+      <div class="card-actions justify-start">
+        <button class="btn bg-[#ff4240] text-white outline-none border-none px-14">Buy Now</button>
+      </div>
+    </div>
+  </div> -->
 
 
+</div> 
 
+
+<!-- ================= -->
+<div class="card1 w-[360px] flex justify-start 
+items-center p-8 bg-[url('/img/4.png')]   bg-no-repeat bg-cover rounded-md  mx-auto lg:w-[97%] lg:h-[450px] lg:mx-auto  lg:mt-8"  >
+  <div class="body lg:mt-16 ">
+    <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
+    <p class=" lg:w-[445px] my-2 lg:my-4 text-sm text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+    <div class="card-actions justify-start">
+      <button class="btn bg-[#ff4240] text-white outline-none border-none px-14">Buy Now</button>
+    </div>
+  </div>
+  
+</div> 
+<!-- <div class="card  w-[330px] mx-auto lg:w-[100%]    image-full  col-span-1 lg:col-span-2  flex">
+  <figure><img src="./img/4.png" alt="HOCKEY" class="" /></figure>
+  <div class="card-body lg:mt-16 ">
+    <h2 class="card-title  lg:text-xl text-white">Junior Program</h2>
+    <p class=" lg:w-[445px] my-2 lg:my-4 text-sm text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+      enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+    <div class="card-actions justify-start">
+      <button class="btn bg-[#ff4240] text-white outline-none border-none px-14">Buy Now</button>
+    </div>
+  </div>
+</div> -->
 
 </div>
+
+
+
+
 
 
 </section>
     <!-- ======================================
               PRODUCT_SECTION
     =====================================================-->
-<section class="product-section">
+<section class="product-section ">
   <div class="shared-title text-center mt-4  p-4 lg:mt-12">
     <h1 class=" text-xl font-bold lg:text-3xl text-[#131313]">Professional Hockeys Club</h1>
     <p class="py-4  w-[335px] lg:text-xl lg:w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
   </div>
 <!-- card-container -->
-<div class="product-container grid  grid-cols-1 lg:grid-cols-2 ">
+<div class="product-container flex flex-col justify-between lg:justify-between lg:flex-row lg:gap-[124px]  ">
 
-<div class="product-card mt-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] sm:mx-auto  lg:w-[573px] lg:h-[218px] border hover:shadow">
+<div class="product-card my-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto lg:mt-2 lg:w-[573px] lg:h-[218px] border hover:shadow">
+
+
 <div class="product-img mx-auto ">
-<img src="./img/5.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px]  ">
+<img src="./img/5.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px] shadow-xl  ">
 </div>
 <div class="product-text p-2  mt-2 mb-2 lg:w-[306px] ">
 <div class="product-icon flex ">
@@ -351,9 +414,11 @@ body{
 
 
 </div>
-<div class="product-card mt-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto  lg:w-[573px] lg:h-[218px] border hover:shadow">
+<div class="product-card my-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto lg:mt-2 lg:w-[573px] lg:h-[218px] border hover:shadow">
+
+
 <div class="product-img mx-auto ">
-<img src="./img/5.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px]  ">
+<img src="./img/6.png" alt="jacket" class=" object-cover w-[226px] h-[182px] lg:w-[180px] lg:h-[182px]  shadow-xl">
 </div>
 <div class="product-text p-2  mt-2 mb-2 lg:w-[306px] ">
 <div class="product-icon flex ">
@@ -414,9 +479,14 @@ body{
 
 
 </div>
-<div class="product-card mt-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto  lg:w-[573px] lg:h-[218px] border hover:shadow">
+</div>
+<div class="product-container flex flex-col justify-between lg:justify-between lg:flex-row lg:gap-[124px]  ">
+
+<div class="product-card my-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto lg:mt-2 lg:w-[573px] lg:h-[218px] border hover:shadow">
+
+
 <div class="product-img mx-auto ">
-<img src="./img/5.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px]  ">
+<img src="./img/7.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px] shadow-xl ">
 </div>
 <div class="product-text p-2  mt-2 mb-2 lg:w-[306px] ">
 <div class="product-icon flex ">
@@ -477,9 +547,11 @@ body{
 
 
 </div>
-<div class="product-card mt-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto  lg:w-[573px] lg:h-[218px] border hover:shadow">
+<div class="product-card my-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto lg:mt-2 lg:w-[573px] lg:h-[218px] border hover:shadow">
+
+
 <div class="product-img mx-auto ">
-<img src="./img/5.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px]  ">
+<img src="./img/8.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px] shadow-xl ">
 </div>
 <div class="product-text p-2  mt-2 mb-2 lg:w-[306px] ">
 <div class="product-icon flex ">
@@ -540,9 +612,14 @@ body{
 
 
 </div>
-<div class="product-card mt-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto  lg:w-[573px] lg:h-[218px] border hover:shadow">
+</div>
+<div class="product-container flex flex-col justify-between lg:justify-between lg:flex-row lg:gap-[124px]  ">
+
+<div class="product-card my-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto lg:mt-2 lg:w-[573px] lg:h-[218px] border hover:shadow">
+
+
 <div class="product-img mx-auto ">
-<img src="./img/5.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px]  ">
+<img src="./img/9.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px] shadow-xl ">
 </div>
 <div class="product-text p-2  mt-2 mb-2 lg:w-[306px] ">
 <div class="product-icon flex ">
@@ -603,9 +680,11 @@ body{
 
 
 </div>
-<div class="product-card mt-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto  lg:w-[573px] lg:h-[218px] border hover:shadow">
+<div class="product-card my-3 p-2 grid grid-cols-1 lg:grid-cols-2 gap-2 w-[335px] h-[493px] mx-auto lg:mt-2 lg:w-[573px] lg:h-[218px] border hover:shadow">
+
+
 <div class="product-img mx-auto ">
-<img src="./img/5.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px]  ">
+<img src="./img/10.png" alt="jacket" class=" object-cover w-[287px] h-[182px] lg:w-[180px] lg:h-[182px] shadow-xl  ">
 </div>
 <div class="product-text p-2  mt-2 mb-2 lg:w-[306px] ">
 <div class="product-icon flex ">
@@ -666,14 +745,6 @@ body{
 
 
 </div>
-
-
-
-
-
-
-
-
 </div>
 
 
@@ -690,30 +761,30 @@ body{
   </div>
 
 <div class="client-container grid grid-cols-1 py-4 lg:grid-cols-2 border hover:shadow-md">
-<div class="client-img ">
+<div class="client-img lg:p-8 ">
   <img src="./img/11.png" alt="client" class="w-[287px]  h-[187px]  object-cover rounded-md mx-auto lg:mx-0 lg:w-[441px] lg:h-[470px]">
 </div>
-<div class="client-text">
-  <div class="collapse collapse-plus border ">
+<div class="client-text p-3">
+  <div class="collapse collapse-plus  border-b p-2 ">
     <input type="radio" name="my-accordion-3" checked="checked" /> 
     <div class="collapse-title text-xl font-medium">
-   <h2>Our Equipment</h2>
+   <h2 class="text-blackText font-bold">Our Equipment</h2>
    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
     </div>
     <div class="collapse-content"> 
       <p>olor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
     </div>
   </div>
-  <div class="collapse collapse-plus  border">
+  <div class="collapse collapse-plus   border-b p-2 text-blackText font-bold">
     <input type="radio" name="my-accordion-3" /> 
-    <div class="collapse-title text-xl font-medium">
+    <div class="collapse-title text-xl font-medium ">
 <h2>Hockey Training</h2>
     </div>
     <div class="collapse-content"> 
       <p>hel consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magnalo</p>
     </div>
   </div>
-  <div class="collapse collapse-plus border">
+  <div class="collapse collapse-plus   border-b p-2 text-blackText font-bold">
     <input type="radio" name="my-accordion-3" /> 
     <div class="collapse-title text-xl font-medium">
       <h2>Hockey Training</h2>
@@ -722,7 +793,7 @@ body{
       <p>helconsectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magnallo</p>
     </div>
   </div>
-  <div class="collapse collapse-plus border">
+  <div class="collapse collapse-plus  border-b p-2 text-blackText font-bold">
     <input type="radio" name="my-accordion-3" /> 
     <div class="collapse-title text-xl font-medium">
       <h2>Hockey Training</h2>
@@ -731,7 +802,7 @@ body{
       <p>helconsectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magnallo</p>
     </div>
   </div>
-  <div class="collapse collapse-plus  border">
+  <div class="collapse collapse-plus   border-b p-2 text-blackText font-bold">
     <input type="radio" name="my-accordion-3" /> 
     <div class="collapse-title text-xl font-medium">
       <h2>Hockey Training</h2>
@@ -740,7 +811,7 @@ body{
       <p>helconsectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magnallo</p>
     </div>
   </div>
-  <div class="collapse collapse-plus border ">
+  <div class="collapse collapse-plus  border-b p-2  text-blackText font-bold">
     <input type="radio" name="my-accordion-3" /> 
     <div class="collapse-title text-xl font-medium">
       <h2>Hockey Training</h2>
@@ -762,54 +833,54 @@ body{
     =====================================================-->
 
 <section class="touch-section container mx-auto">
-  <div class="shared-title text-center mt-4  p-4 lg:mt-12 lg:w-[672px] lg:h-">
+  <div class="shared-title text-center mt-4  p-4 lg:mt-12">
     <h1 class=" text-xl font-bold lg:text-3xl text-[#131313]">Professional Hockeys Club</h1>
     <p class="py-4  w-[335px] lg:text-xl lg:w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
   </div>
-  <div class="touch-container flex flex-col lg:justify-between justify-between lg:flex-row   gap-4">
-    <div class="contact-section border hover:border p-8">
-<div class="contact-item1 w-[287px] h-[187px] lg:h-[210px]  p-8 mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
+  <div class="touch-container flex flex-col py-1 px-1 lg:justify-between justify-between lg:flex-row   gap-4">
+    <div class="contact-section border hover:border p-4">
+<div class="contact-item1 w-[360px] h-[187px] lg:w-[374px] lg:h-[210px]  px-4 mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
 <img src="./img/Group 1171275317.png" alt="PHone" class="w-[46px] h-[48px]">
-<p class="mt-8 mb-4">Phone Number : </p>
+<p class="mt-8 mb-4 text-blackText font-bold space-y-4">Phone Number : </p>
 <p>(+62) 123-321-543</p>
 </div>
-<div class="contact-item1  w-[287px] h-[187px]lg:w-[376px] lg:h-[210px]  p-8  mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
-<img src="./img/Group 1171275317.png" alt="PHone" class="w-[46px] h-[48px]">
-<p class="mt-8 mb-4">Phone Number : </p>
+<div class="contact-item1  w-[360px] lg:w-[374px]  h-[187px]lg:w-[376px] lg:h-[210px]  p-4  mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
+<img src="./img/Group 1171275318.png" alt="PHone" class="w-[46px] h-[48px]">
+<p class="mt-8 mb-4 text-blackText font-bold">Phone Number : </p>
 <p>(+62) 123-321-543</p>
 </div>
-<div class="contact-item1  w-[287px] h-[187px]  lg:w-[376px] lg:h-[210px]  p-8 mb-4 rounded-lg" style="background-color: rgba(188, 237, 109, 0.10);">
-<img src="./img/Group 1171275317.png" alt="PHone" class="w-[46px] h-[48px]">
-<p class="mt-8 mb-4">Phone Number : </p>
+<div class="contact-item1  w-[360px] h-[187px]  lg:w-[376px] lg:h-[210px]  p-4  mb-4 rounded-lg " style="background-color:rgba(98, 156, 243, 0.10);">
+<img src="./img/Group 1171275321.png" alt="PHone" class="w-[46px] h-[48px]">
+<p class="mt-8 mb-4 text-blackText font-bold">Phone Number : </p>
 <p>(+62) 123-321-543</p>
 </div>
 
     </div>
-    <div class="form-section">
+    <div class="form-section border p-4 hover:shadow-lg lg:p-12">
     <form action="">
 <!-- emacil and name -->
 <div class="form-item1  w-[335px] lg:w-[672px ] flex flex-col justify-between lg:justify-between lg:flex-row">
   <div class="name">
-    <h2 class="mb-3">Your Name</h2>
-    <input type="text" placeholder="your name..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
+    <h2 class="mb-4 text-black text-[20px] ">Your Name</h2>
+    <input type="text" placeholder="Enter your fullName." class=" text-shadowText w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
   <div class="email">
-    <h1 class="mb-3">Your Email.</h1>
+    <h1 class="mb-4 text-black text-[20px]">Your Email.</h1>
     <input type="email" placeholder="your email..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
 </div>
 <div class="form-item1 w-[335px] lg:w-[672px ] flex flex-col justify-between lg:justify-between lg:flex-row">
   <div class="name">
-    <h2 class="mb-3">Subject</h2>
-    <input type="email" placeholder="your email..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
+    <h2 class="mb-4 text-black text-[20px]">Subject</h2>
+    <input type="email" placeholder="Enter your email..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
   <div class="email mt-4">
-    <h1 class="mb-3">Phone Number.</h1>
-    <input type="email" placeholder="your email..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
+    <h1 class="mb-4 text-black text-[20px]">Phone Number.</h1>
+    <input type="email" placeholder="Enter your number..." class=" w-[335px] h-[64px]  lg:w-[324px] lg:h-[64px] border-none outline-none p-3 rounded-xl" style="background: rgba(19, 19, 24, 0.03);">
   </div>
 </div>
-<h2 class="mb-3">Message</h2>
-<textarea name="" id="" cols="30" rows="10" class=" w-335px lg:w-[672px] border-none outline-none p-3 rounded-md" placeholder="textarea....." style="background: rgba(19, 19, 24, 0.03);"></textarea><br>
+<h2 class="mb-4 text-black text-[20px] ">Message</h2>
+<textarea name="" id="" cols="30" rows="10" class=" w-335px h-[200px] lg:mb-12 lg:w-[672px] border-none outline-none p-3 rounded-md" placeholder="textarea....." style="background: rgba(19, 19, 24, 0.03);"></textarea><br>
 <button class="btn w-full mt-4 bg-primary border-none text-white">Send Message</button>
     </form>
     
@@ -822,16 +893,16 @@ body{
               SOCIAL_SECTION
     =====================================================-->
 
-    <div class="social-section "style="background: rgba(19, 19, 24, 0.03);">
+    <div class="social-section  rounded-md lg:mt-8 w-[335px] lg:w-[100%] px-8 lg:px-0 "style="background: rgba(19, 19, 24, 0.03);">
 
       <div class="shared-title text-center mt-4  p-4 lg:mt-12 lg:w-[672px] mx-auto " >
         <h1 class=" text-xl font-bold lg:text-3xl text-[#131313] lg:mx-auto">SOCIAL MEDIA</h1>
       </div>
     
-    <div class="social-icon flex justify-center gap-5 text-2xl">
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
+    <div class="social-icon flex justify-center gap-5 text-2xl mx-auto  lg:mb-8">
+      <i class="fa-brands fa-twitter text-blackText"></i>
+      <i class="fa-brands fa-facebook text-blackText"></i>
+      <i class="fa-brands fa-instagram text-blackText"></i>
       <i class="fa-brands fa-tiktok"></i>
     </div>
     
@@ -845,54 +916,100 @@ body{
     <!-- ======================================
                 FOOTER_SECTION
     =====================================================-->
-<section class="footer-container bg-black mt-12">
-  <footer class="footer p-10 bg-black text-base-content container mx-auto">
-    <nav>
-      <header class="footer-title">GET IN TOUCH</header> 
-<p class="lg:w-[386px]">      Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-
-<div class="footer-icon flex justify-between gap-3 items-center">
-  <img src="./svg/Frame (1).png" alt="frame1" class="w-24px h-24px">
-  <p>hockeys@support.com</p>
-</div>
-<div class="footer-icon flex justify-between gap-3 items-center">
-  <img src="./svg/Frame.png" alt="frame1" class="w-24px h-24px">
-  <p>hockeys@support.com</p>
-</div>
-
-
-    </nav> 
-    <nav>
-      <header class="footer-title">Company</header> 
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Leadership</a>
-      <a class="link link-hover">Careers</a>
-      <a class="link link-hover">News & Article </a>
-      <a class="link link-hover">Legal Notice </a>
-    </nav> 
-    <nav>
-      <header class="footer-title">Services</header> 
-      <a class="link link-hover">Academy</a>
-      <a class="link link-hover">Group Lesson</a>
-      <a class="link link-hover">Private Lesson</a>
-      <a class="link link-hover">Hockeys for kids</a>
-      <a href="#">Hockeys for Adult</a>
-    </nav> 
-    <nav>
-      <header class="footer-title">Support</header> 
-      <a class="link link-hover">Help Center</a>
-      <a class="link link-hover">FAQ</a>
-      <a class="link link-hover">Ticket Support</a>
-      <a class="link link-hover">Contact Us</a>
-    </nav> 
-
+<!-- <section class="footer-container bg-black mt-12">
+  <footer class="footer ">
  
+<div class="footer-content">
+
+
+<div class="reverse flex  justify-between flex-col-reverse ">
+
+
+
+</div>
+ 
+
+
+
+
+
+
+
+
+    
   </footer>
+
+
+
+</section> -->
+
+
+<!-- ================================ -->
+<footer class="bg-blackText mt-12">
+<section class="footer-section container mx-auto">
+<div class="footer-container flex  justify-between flex-col lg:justify- lg:flex-row items-center">
+
+<div class="item1 "> 
+  <div class="div p-10  text-base-content container mx-auto">
+    <header class="footer-title mx-auto lg:mx-0 text-white text-bold">GET IN TOUCH</header> 
+<p class="lg:w-[386px] text-center lg:text-start">      Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+<div class="footer-icon flex justify-between gap-3 items-center mx-auto lg:mx-0">
+<img src="./svg/Frame (1).png" alt="frame1" class="w-24px h-24px">
+<p>hockeys@support.com</p>
+</div>
+<div class="footer-icon flex justify-between gap-3 items-center mx-auto lg:mx-0">
+<img src="./svg/Frame.png" alt="frame1" class="w-24px h-24px">
+<p>hockeys@support.com</p>
+</div>
+
+
+
+ </div>
+
+</div>
+<div class="item2 flex  flex-col lg:flex-col"> 
+
+    <header class="footer-title">Company</header> 
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Leadership</a>
+    <a class="link link-hover">Careers</a>
+    <a class="link link-hover">News & Article </a>
+    <a class="link link-hover">Legal Notice </a>
+
+
+
+</div>
+
+<div class="reverse  flex flex-row-reverse">
+
+  <div class="item3 flex  flex-col lg:flex-col">   
+    <header class="footer-title">Support</header> 
+    <a class="link link-hover">Help Center</a>
+    <a class="link link-hover">FAQ</a>
+    <a class="link link-hover">Ticket Support</a>
+    <a class="link link-hover">Contact Us</a>
+  
+  </div>
+</div>
+<div class="item4 flex  flex-col lg:flex-col">   
+  <header class="footer-title">Services</header> 
+  <a class="link link-hover">Academy</a>
+  <a class="link link-hover">Group Lesson</a>
+  <a class="link link-hover">Private Lesson</a>
+  <a class="link link-hover">Hockeys for kids</a>
+  <a href="#">Hockeys for Adult</a>
+ </div>
+
+</div>
 
 
 
 </section>
 
+
+
+</footer>
 
 
 
